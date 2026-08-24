@@ -1,0 +1,80 @@
+:root {
+  --bg: #1a1512;
+  --bg-raised: #241d19;
+  --border: #3a2f29;
+  --text: #f5efe6;
+  --text-dim: #a99b8c;
+
+  --gradient-signature: linear-gradient(90deg, #f2a93c 0%, #e2604f 50%, #8b3a9e 100%);
+
+  --severity-low: #2e7d32;
+  --severity-mid: #d68910;
+  --severity-high: #c0392b;
+
+  --font-display: "Archivo Black", "Arial Black", sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, SFMono-Regular, monospace;
+  --font-body: system-ui, -apple-system, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-body);
+}
+
+.kicker {
+  display: inline-block;
+  font-family: var(--font-mono);
+  text-transform: uppercase;
+  font-size: 11px;
+  letter-spacing: 0.06em;
+  color: var(--text-dim);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 3px 8px;
+  background: transparent;
+}
+
+.pill-btn {
+  border-radius: 999px;
+  cursor: pointer;
+  font-family: var(--font-body);
+}
+
+.card {
+  background: var(--bg-raised);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 16px;
+  margin-bottom: 12px;
+}
+
+.gauge-track {
+  position: relative;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  height: 8px;
+  overflow: hidden;
+}
+
+.gauge-fill {
+  height: 100%;
+}
+
+.gauge-tick {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background: rgba(245, 239, 230, 0.18);
+}
+
+.mono {
+  font-family: var(--font-mono);
+}
